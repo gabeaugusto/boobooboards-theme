@@ -462,9 +462,9 @@
                 %}
 
               {%- when 'variant_picker' -%}
-                <div class="line-item-property__field">
-                  <input id="your-name" type="text" name="properties[Your name]" form="{{ product_form_id }}">
-                  <label for="your-name">Your name</label>
+                <div class="field">
+                  <input id="your-name" class="field__input" type="text" name="properties[Your name]" form="{{ product_form_id }}">
+                  <label class="field__label">Your name</label>
                 </div>
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
