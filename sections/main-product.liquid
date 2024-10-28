@@ -462,10 +462,12 @@
                 %}
 
               {%- when 'variant_picker' -%}
-                <div class="field">
-                  <input id="your-name" class="field__input" type="text" name="properties[Your name]" form="{{ product_form_id }}" placeholder="Your name">
-                  <label class="field__label">Your name</label>
-                </div>
+                {%- if product.type == "Snowboard" %}
+                  <div class="field">
+                    <input id="your-name" class="field__input" type="text" name="properties[Your name]" form="{{ product_form_id }}" placeholder="Your name">
+                    <label class="field__label">Your name</label>
+                  </div>
+                {% endif %}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
