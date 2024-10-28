@@ -72,6 +72,15 @@
     >
   {%- endif -%}
 
+  {% style %}  
+    .product-navigation {
+      display: flex;
+      justify-content: {% if collection.previous_product %}space-between{% else %}flex-end{% endif %};
+      width: 100%;
+      padding-bottom: {{ settings.product_navigation_padding_bottom }}px;
+    }
+  {% endstyle %}
+
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
     {% if settings.show_product_navigation %}
