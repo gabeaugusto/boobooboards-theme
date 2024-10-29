@@ -58,13 +58,6 @@
           "settings": {
           }
         },
-        "download_link": {
-          "type": "text",
-          "settings": {
-            "text": "Download the company's sustainability efforts PDF file",
-            "text_style": "body"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -81,7 +74,6 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "download_link",
         "share"
       ],
       "settings": {
