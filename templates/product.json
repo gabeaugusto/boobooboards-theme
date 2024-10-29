@@ -61,8 +61,6 @@
         "download_link": {
           "type": "text",
           "settings": {
-            "text": "Download the company's sustainability efforts <a href=\"/products/zipped-jacket\" target=\"_blank\" title=\"Zipped Jacket\">PDF file</a>.",
-            "text_style": "body"
           }
         },
         "share": {
