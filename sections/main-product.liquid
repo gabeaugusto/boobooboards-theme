@@ -113,10 +113,10 @@
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
                 >
-                  {%- if block == 'download_link' -%}
+                  {%- if block.id == 'download_link' and product.metafields.custom.asset_file != blank -%}
                     <a href="{{ product.metafields.custom.asset_file.value.url }}" download>{{- block.settings.text -}}</a>
                   {%- else -%}
-                    {{- block.id -}}
+                    {{- block.settings.text -}}
                   {%- endif -%}
                 </p>
               {%- when 'title' -%}
