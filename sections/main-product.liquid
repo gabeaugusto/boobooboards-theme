@@ -116,7 +116,7 @@
                   {%- if block == 'download_link' -%}
                     <a href="{{ product.metafields.custom.asset_file.value.url }}" download>{{- block.settings.text -}}</a>
                   {%- else -%}
-                    {{- block -}}
+                    {{- block.id -}}
                   {%- endif -%}
                 </p>
               {%- when 'title' -%}
